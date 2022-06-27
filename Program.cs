@@ -4,15 +4,15 @@
 
 int sum2 = 0;
 float avg = 0f;
-int a = 0;
+int numberIteration = 0;
 
 for (int i = 2; i <= 10; i++)
 {
-    a += 1;
+    numberIteration += 1;
     sum2 = sum2 + i;
 }
 
-avg = sum2 / a;
+avg = sum2 / numberIteration;
 Console.WriteLine(sum2);
 Console.WriteLine(avg);
 
