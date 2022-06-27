@@ -1,5 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+//snack 10
+
+Console.Write("inserisci il numero di array: ");
+int n = Int32.Parse(Console.ReadLine());
+
+for(int i = 0; i < n; i++)
+{
+    Console.WriteLine("arr" + (i +1) + ":\n");
+    int[] arr = new int[10];
+    for(int j = 0; j < 10; j++)
+    {
+        Random r = new Random();
+        int rInt = r.Next(1, 101);
+        arr[j] = rInt;
+        Console.WriteLine(arr[j] + "\n");
+    }
+}
+
+return;
+
 //snack 5
 
 Console.Write("inserisci un numero: ");
