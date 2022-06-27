@@ -1,9 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+//snack 5
+
+Console.Write("inserisci un numero: ");
+int userNum1 = Int32.Parse(Console.ReadLine());
+
+if (userNum1 % 2 == 0)
+{
+    Console.WriteLine("il numero e': " + userNum1);
+}else
+{
+    Console.WriteLine("il numero e': " + (userNum1 + 1));
+}
+
+
+
+return;
+
 //snack 4
 
 int sum2 = 0;
-float avg = 0f;
+double avg = 0f;
 int numberIteration = 0;
 
 for (int i = 2; i <= 10; i++)
@@ -31,3 +48,5 @@ for (int i = 0; i < 10; i++)
 }
 
 Console.WriteLine("la somma dei numeri e': " + sum);
+
+return;
