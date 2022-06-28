@@ -1,5 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+//snack 12
+
+void IsEven(int number)
+{
+    if (number % 2 == 0)
+    {
+         Console.WriteLine("the number is even");
+    }else
+    {
+        Console.WriteLine("the number is odd");
+    }
+}
+
+Console.Write("enter a number: ");
+
+int number = Int32.Parse(Console.ReadLine());
+
+Console.WriteLine();
+
+IsEven(number);
+
+return;
+
 // snack 11
 
 string CheckWords(string word1, string word2)
