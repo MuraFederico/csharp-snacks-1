@@ -1,5 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+// snack 11
+
+string CheckWords(string word1, string word2)
+{
+    if (word1.Length == word2.Length)
+    {
+        return $"{word1} {word2}";
+    }else if(word1.Length > word2.Length)
+    {
+        return word1;
+    }else
+    {
+        return word2;
+    }
+};
+
+Console.Write("inserisci 2 parole: ");
+string word1 = Console.ReadLine();
+string word2 = Console.ReadLine();
+
+string result = CheckWords(word1, word2);
+
+Console.WriteLine();
+Console.WriteLine(result);
+
+return;
+
 //snack 10
 
 Console.Write("inserisci il numero di array: ");
@@ -7,15 +34,16 @@ int n = Int32.Parse(Console.ReadLine());
 
 for(int i = 0; i < n; i++)
 {
-    Console.WriteLine("arr" + (i +1) + ":\n");
+    /*Console.WriteLine("arr" + (i +1) + ":\n");*/
     int[] arr = new int[10];
     for(int j = 0; j < 10; j++)
     {
         Random r = new Random();
         int rInt = r.Next(1, 101);
         arr[j] = rInt;
-        Console.WriteLine(arr[j] + "\n");
+        Console.Write(arr[j] + "\t");
     }
+    Console.WriteLine();
 }
 
 return;
